@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@android:id/progress"
+        android:top="16dp"
+        android:bottom="16dp">
+        <layer-list>
+            <item>
+                <rotate
+                    android:fromDegrees="45"
+                    android:pivotX="50%"
+                    android:pivotY="50%"
+                    android:toDegrees="315">
+                    <shape android:shape="oval">
+                        <size
+                            android:width="80dp"
+                            android:height="80dp" />
+                        <stroke
+                            android:width="6dp"
+                            android:color="#b71c1c" />
+                    </shape>
+                </rotate>
+            </item>
+            <item>
+                <rotate
+                    android:fromDegrees="100"
+                    android:pivotX="50%"
+                    android:pivotY="50%"
+                    android:toDegrees="340">
+                    <shape android:shape="oval">
+                        <size
+                            android:width="70dp"
+                            android:height="70dp" />
+                        <stroke
+                            android:width="6dp"
+                            android:color="#1a237e" />
+                    </shape>
+                </rotate>
+            </item>
+            <item>
+                <rotate
+                    android:fromDegrees="155"
+                    android:pivotX="50%"
+                    android:pivotY="50%"
+                    android:toDegrees="370">
+                    <shape android:shape="oval">
+
+                        <size
+                            android:width="70dp"
+                            android:height="70dp" />
+                        <stroke
+                            android:width="6dp"
+                            android:color="#1A7E4F" />
+                    </shape>
+                </rotate>
+            </item>
+            <item>
+                <rotate
+                    android:fromDegrees="195"
+                    android:pivotX="50%"
+                    android:pivotY="50%"
+                    android:toDegrees="400">
+                    <shape android:shape="oval">
+
+                        <size
+                            android:width="70dp"
+                            android:height="70dp" />
+                        <stroke
+                            android:width="6dp"
+                            android:color="#EBE60F" />
+                    </shape>
+                </rotate>
+            </item>
+        </layer-list>
+    </item>
+</layer-list>
