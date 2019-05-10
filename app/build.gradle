@@ -34,6 +34,9 @@ dependencies {
     annotationProcessor 'com.github.bumptech.glide:compiler:4.8.0'
     implementation 'jp.wasabeef:glide-transformations:4.0.0'
 
+   // implementation "androidx.navigation:navigation-fragment-ktx:2.1.0-alpha03"
+    //implementation "androidx.navigation:navigation-ui-ktx:2.1.0-alpha03"
+
     api 'com.google.guava:guava:27.1-android'
 
     testImplementation 'junit:junit:4.12'

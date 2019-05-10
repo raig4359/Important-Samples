@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".testingmodules.DetailSFFragment">
+
+    <TextView
+        android:id="@+id/tv_timeline"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginRight="15dp"
+        android:fontFamily="serif-monospace"
+        android:text="Sandra Adam - 24 hours ago"
+        android:textColor="@color/grey1"
+        android:textSize="15sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/iv_profile"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginRight="35dp"
+        android:fontFamily="sans-serif-black"
+        android:maxLines="1"
+        android:text="Neutron Star party"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/iv_profile"
+        app:layout_constraintTop_toBottomOf="@+id/tv_timeline" />
+
+
+    <TextView
+        android:id="@+id/tv_description"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginRight="35dp"
+        android:ellipsize="end"
+        android:text="Be consistent. If you're using Shared Element Transitions in only one part of your app and you leave out other prime candidates, you're going to have negative impact on the users feelings towards it. It will feel incomplete and will be worse than having no Shared Element Transitions at all. As above though, this doesn't mean go crazy, but by keeping consistency you will help users understand what they mean and their intention."
+        android:textColor="@color/grey2"
+        android:textSize="17sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_profile" />
+
+    <ImageView
+        android:id="@+id/iv_profile"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_margin="15dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/homeland"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_sample1"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/cars"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_description" />
+
+    <ImageView
+        android:id="@+id/iv_sample2"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/big_bang"
+        app:layout_constraintLeft_toRightOf="@+id/iv_sample1"
+        app:layout_constraintTop_toBottomOf="@+id/tv_description" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="5dp"
+        android:background="@color/grey0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_sample1" />
+
+</android.support.constraint.ConstraintLayout>
