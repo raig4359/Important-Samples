@@ -43,12 +43,12 @@ class RecordAdapterSF(private val listener: RecordInteraction) :
             var ivProfile: ImageView = itemView.iv_profile
 
             init {
-                itemView.setOnClickListener { listener.showDetailRecord() }
+                itemView.setOnClickListener { listener.showDetailRecord(itemView) }
             }
         }
     }
 
     interface RecordInteraction {
-        fun showDetailRecord()
+        fun showDetailRecord(itemView: View)
     }
 }

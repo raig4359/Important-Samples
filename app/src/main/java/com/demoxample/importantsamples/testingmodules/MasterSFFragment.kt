@@ -36,8 +36,8 @@ class MasterSFFragment : Fragment() {
         super.onActivityCreated(savedInstanceState)
         rv_records.layoutManager = LinearLayoutManager(activity)
         rv_records.adapter = RecordAdapterSF(object :RecordAdapterSF.RecordInteraction{
-            override fun showDetailRecord() {
-                listener?.showDetailScreen()
+            override fun showDetailRecord(itemView: View) {
+                listener?.showDetailScreen(itemView)
             }
         })
     }
@@ -57,7 +57,7 @@ class MasterSFFragment : Fragment() {
     }
 
     interface OnFragmentInteractionListener{
-        fun showDetailScreen()
+        fun showDetailScreen(itemView: View)
     }
 
     companion object {
